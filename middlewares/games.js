@@ -15,4 +15,6 @@ const getAllGames = async (req, res, next) => {
     next();
 }
 
-    module.exports = getAllGames;
+module.exports = {
+    getAllGames
+} 
