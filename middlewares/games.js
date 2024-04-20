@@ -9,11 +9,10 @@ const getAllGames = async (req, res, next) => {
         message: "Нет игр в базе данных. Добавьте игру."
         });
     return;
-    
-}
-    req.games = games;
-    next();
-}
+    }
+        req.games = games;
+        next();
+    }
 
 module.exports = {
     getAllGames
