@@ -54,7 +54,7 @@ const sendAllGames = async (req, res) => {
         req.games = [...req.games, req.updatedObject];
     } else {
         res.status(400);
-        res.send({ status: "error", message: "Игра с таким именем уже есть." });
+        res.send({ status: "error", message: "Это не очень оригинально." });
         return
     }
     // Записываем обновлённый список игр в файл
