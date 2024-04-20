@@ -1,5 +1,4 @@
 const {  writeData } = require("../utils/data"); // Чтение и запись данных в JSON-файл
-const {} = require("")
 // Получим игры из JSON-файла и отправим в ответ на запрос
 const sendAllGames = async (req, res) => {
     res.send(req.games);
